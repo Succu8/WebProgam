@@ -1,0 +1,71 @@
+* {margin: 0; padding: 0;}
+
+body{
+     background: url('../img/fon.jpg') no-repeat center;
+}
+.main_container {
+    display: flex;
+    margin: 100px 50px 100px 50px;
+    font-family: sans-serif;
+   
+}
+
+.currentPlayer span{
+    color : red;
+    font-size: 50px;
+}
+
+#area {
+    width: 270px;
+    border: 12px solid red;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    border: 5px solid red;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background .1s;
+}
+
+.cell:hover {
+    background-color: #33CB3FFF;
+}
+
+.currentPlayer {
+    width: 140px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+.stat table {
+    border-collapse: collapse;
+}
+
+.stat table, .stat th, .stat td {
+    border: 5px solid red;
+    padding: 5px;
+    text-align: center;
+    color: red;
+}
+.footer{
+   color:gold;
+   text-align: center;
+   font-family: Algerian;
+   font-size: 100px;
+   font-weight: 500;
+}
