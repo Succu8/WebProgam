@@ -1,0 +1,270 @@
+@font-face {
+  font-family: anime; 
+  src:url('../fonts/manga.ttf');
+}
+
+@font-face {
+  font-family: manga; 
+  src:url('../fonts/secfont.otf');
+}
+
+@font-face {
+  font-family: japan; 
+  src:url('../fonts/third.otf');
+}
+
+@font-face {
+  font-family: banzai; 
+  src:url('../fonts/banzai.ttf');
+}
+
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 4px rgba(104, 104, 104, 0.3);
+}
+
+html {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: rgb(19, 19, 19);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background: #1a1a1a;
+  color: #a6a6a6;
+  font-family: anime;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  width: 80px;
+  box-shadow: 0 1px 10px rgba(89, 89, 89, 0.5);
+  text-align: center;
+}
+
+.btn:hover {
+  background: #404040;
+  color: var(--light);
+  transition: 0.5s linear;
+}
+
+footer {
+  margin-top: 2rem;
+  background: black;
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+}
+
+footer img{
+  max-height: 40px;
+  max-width: 90px;
+}
+
+.foot {
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  max-height: 50px;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: rgba(89, 89, 89, 0.2);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+  border-radius: 5px;
+  font-family: anime;
+}
+
+.main-nav a:hover {
+  background: #404040;
+  color: var(--light);
+  transition: 0.5s linear;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 14px;
+}
+
+.gridd {
+  box-shadow: var(--shadow);
+  background: rgb(10, 10, 10);
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.animename {
+  text-align: center;
+  color: var(--light);
+  text-shadow: 
+  0 0 5px rgba(191, 191, 191, .7),
+  0 0 15px rgba(191, 191, 191, .7),
+  0 0 20px rgba(204, 204, 204, .7),
+  0 0 30px rgba(217, 217, 217, .5),
+  0 0 40px rgba(217, 217, 217, .4);
+  font-family: japan;
+  font-size: 40px;
+  margin-top: 35px;  
+}
+
+.imgp {
+  padding-top: 0px;
+  font-family: banzai;
+  font-size: 10px;
+  color:rgba(242, 242, 242, 0.5);
+  text-shadow: 
+  0 0 5px rgba(191, 191, 191, .7),
+  0 0 15px rgba(191, 191, 191, .7),
+  0 0 20px rgba(204, 204, 204, .7),
+  0 0 30px rgba(217, 217, 217, .5),
+  0 0 40px rgba(217, 217, 217, .4);
+}
+
+.fa-star {
+  color:white;
+  text-shadow: 
+  0 0 5px rgba(255, 255, 0, .7),
+  0 0 15px rgba(255, 255, 0, .7),
+  0 0 20px rgba(255, 255, 102, .7),
+  0 0 30px rgba(255, 255, 102, .5),
+  0 0 40px rgba(255, 255, 128, .4);
+}
+
+.fa-star-half-alt {
+  color:white;
+  text-shadow: 
+  0 0 5px rgba(255, 255, 0, .7),
+  0 0 15px rgba(255, 255, 0, .7),
+  0 0 20px rgba(255, 255, 102, .7),
+  0 0 30px rgba(255, 255, 102, .5),
+  0 0 40px rgba(255, 255, 128, .4);
+}
+
+.gridd1 {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/top1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.gridd2 h2{
+  text-align: center;
+  color: var(--light);
+  text-shadow: 
+  0 0 5px rgba(255, 255, 0, .7),
+  0 0 15px rgba(255, 255, 0, .7),
+  0 0 20px rgba(255, 255, 102, .7),
+  0 0 30px rgba(255, 255, 102, .5),
+  0 0 40px rgba(255, 255, 128, .4);
+  text-align: center;
+  font-family: japan;
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+.animetext {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: banzai;
+  font-size: 22px;
+}
+
+.under {
+  text-align: center;
+  font-size: 17px;
+  color: #8c8c8c;
+  font-family: banzai;
+}
+
+.gridd3 {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/top2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.gridd5 {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/top3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.gridd7 {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/top4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.gridd9 {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/top5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.gridd11 {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/top6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,151 @@
+@font-face {
+  font-family: anime; 
+  src:url('../fonts/manga.ttf');
+}
+
+@font-face {
+  font-family: manga; 
+  src:url('../fonts/secfont.otf');
+}
+
+@font-face {
+  font-family: japan; 
+  src:url('../fonts/third.otf');
+}
+
+@font-face {
+  font-family: banzai; 
+  src:url('../fonts/banzai.ttf');
+}
+
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 4px rgba(104, 104, 104, 0.3);
+}
+
+html {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) ), url(../img/adminback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background: rgba(23, 23, 23, 0);
+  color: rgba(166, 166, 166, 0.4);
+  font-family: anime;
+  font-size: 30px;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  width: 500px;
+  height: 100px;
+  box-shadow: 0 1px 10px rgba(89, 89, 89, 0.3);
+  text-align: center;
+}
+
+.btn:hover {
+  background: rgba(51, 51, 51, 0.3);
+  color: var(--light);
+  transition: 0.8s linear;
+}
+
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: rgba(89, 89, 89, 0.2);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+  border-radius: 5px;
+  font-family: anime;
+}
+
+.main-nav a:hover {
+  background: #404040;
+  color: var(--light);
+  transition: 0.5s linear;
+}
+
+.wrap h1{
+  font-family: banzai;
+  text-align: center;
+  color: var(--light);
+  text-shadow: 
+  0 0 5px rgba(191, 191, 191, .7),
+  0 0 15px rgba(191, 191, 191, .7),
+  0 0 20px rgba(204, 204, 204, .7),
+  0 0 30px rgba(217, 217, 217, .5),
+  0 0 40px rgba(217, 217, 217, .4);
+  font-size: 90px;
+}
+
+footer {
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+}
+
+footer img{
+  max-height: 40px;
+  max-width: 90px;
+}
+
+.foot {
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  body{
+    margin: 0 10px;
+  }
+  .main-nav a{
+    font-size: 1rem;
+  }
+  .btn{
+    width: 100%;
+  }
+  .wrap h1{
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
