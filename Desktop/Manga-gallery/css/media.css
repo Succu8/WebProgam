@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1200px){
+.manga{
+	width: 100%;
+}
+ }
+
+ @media only screen and (max-width: 760px){
+
+.body_container{
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+}
+
+.header h1{
+   font-size: 50px;
+}
+
+.text2{
+	font-size: 30px;
+
+	transform : translate(0px,10%);
+	opasity:0;
+	transition : all 0.8s ease 0s;
+}
+
+
+ .manga_style{
+ 		width: 300px;
+	height: 350px;
+ }
+
+
+.top3{
+	padding-top: 200px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	}
+
+.top6{
+	padding-top: 70px;
+flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.top9{
+	padding-top: 70px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.top12{
+	padding-top: 70px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.number{
+	text-align: left;
+}
+ }
+
+.footer_text{
+	font-weight:100;
+	font-size: 50px;
+}
+
+
+@media only screen and (max-width: 450px){
+
+.header h1{
+   font-size: 40px;
+}
+
+.text2{
+	font-size: 25px;
+}
+
+}
