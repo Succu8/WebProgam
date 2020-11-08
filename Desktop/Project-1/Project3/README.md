@@ -1,4 +1,4 @@
-#MIDTERM PROJECT
+#MIDTERM PROJECT<br>
 ####PROJECT NAME : ANIME SITE (kanpeki.com)<br>
 ####PROJECT AUTHOR : BAIKEYEV SAYAN , AKILBEKOV AZIZ<br> 
 #####Purpose of creation :  we wanted to create a site like this for a long time, since we like anime and manga.<br>
