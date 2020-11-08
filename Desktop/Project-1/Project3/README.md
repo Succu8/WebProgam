@@ -1,7 +1,7 @@
 #MIDTERM PROJECT
-####PROJECT NAME : ANIME SITE (kanpeki.com)
-####PROJECT AUTHOR : BAIKEYEV SAYAN , AKILBEKOV AZIZ 
-#####Purpose of creation :  we wanted to create a site like this for a long time, since we like anime and manga.
+####PROJECT NAME : ANIME SITE (kanpeki.com)<br>
+####PROJECT AUTHOR : BAIKEYEV SAYAN , AKILBEKOV AZIZ<br> 
+#####Purpose of creation :  we wanted to create a site like this for a long time, since we like anime and manga.<br>
  **Examples, source:** regular anime sites
  
  **Tools**: *html*, *css*, *js* and its framework(*JSON* , *jQuery*)
@@ -28,7 +28,10 @@
  - change account details
  - leave comments
 
- ***Administrator features:***
+ ***Administrator features:***<br>
+ **Login :** *admin*<br>
+ **Password :** *admin2020*
+ 
  - create users
  - watch users
  - block the user and unblock him
