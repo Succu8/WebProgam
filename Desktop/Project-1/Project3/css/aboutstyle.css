@@ -1,0 +1,226 @@
+@font-face {
+  font-family: anime; 
+  src:url('../fonts/manga.ttf');
+}
+
+@font-face {
+  font-family: manga; 
+  src:url('../fonts/secfont.otf');
+}
+
+@font-face {
+  font-family: japan; 
+  src:url('../fonts/third.otf');
+}
+
+@font-face {
+  font-family: banzai; 
+  src:url('../fonts/banzai.ttf');
+}
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 4px rgba(104, 104, 104, 0.3);
+}
+
+html {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: rgb(19, 19, 19);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background: #1a1a1a;
+  color: #a6a6a6;
+  font-family: anime;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  width: 80px;
+  box-shadow: 0 1px 10px rgba(89, 89, 89, 0.5);
+  text-align: center;
+}
+
+.btn:hover {
+  background: #404040;
+  color: var(--light);
+  transition: 0.5s linear;
+}
+
+.foot1 {
+  /* height: 70px; */
+  margin-top: 2rem;
+  background: black;
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+footer img{
+  max-height: 40px;
+  max-width: 90px;
+}
+
+.foot2 {
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  max-height: 50px;
+}
+
+.main-nav3 ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav3 a {
+  background: rgba(89, 89, 89, 0.2);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+  border-radius: 5px;
+  font-family: anime;
+}
+
+.main-nav3 a:hover {
+  background: #404040;
+  color: var(--light);
+  transition: 0.5s linear;
+}
+
+.gridd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+
+.griddd {
+  box-shadow: var(--shadow);
+  background: rgb(10, 10, 10);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.griddd1 {
+  padding: 3px;
+  margin: 0;
+
+}
+
+.griddd2 {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../img/aboutback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.griddd2 h2{
+  text-align: center;
+  color: var(--light);
+  text-shadow: 
+  0 0 5px rgba(191, 191, 191, .7),
+  0 0 15px rgba(191, 191, 191, .7),
+  0 0 20px rgba(204, 204, 204, .7),
+  0 0 30px rgba(217, 217, 217, .5),
+  0 0 40px rgba(217, 217, 217, .4);
+  text-align: center;
+  font-family: japan;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.griddd2 p{
+  text-align: center;
+}
+
+
+.griddd4 {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../img/aboutback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.griddd4 h2{
+  text-align: center;
+  color: var(--light);
+  text-shadow: 
+  0 0 5px rgba(191, 191, 191, .7),
+  0 0 15px rgba(191, 191, 191, .7),
+  0 0 20px rgba(204, 204, 204, .7),
+  0 0 30px rgba(217, 217, 217, .5),
+  0 0 40px rgba(217, 217, 217, .4);
+  text-align: center;
+  font-family: japan;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.griddd4 p{
+  text-align: center;
+}
+.mySlides{
+  width: 100%;
+  border-radius: 10px;
+}
+.ymaps-map{
+  width: 100% !important;
+  height: 500px !important  ;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    margin: 0;
+  }
+  .gridd {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .gridd {
+    grid-template-columns: 1fr;
+  }
+
+}
+@media (min-width: 992px) {
+  .gridd {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .gridd {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* dlya proverki*/
+ .toCheck{
+  background: grey;
+  color: var(--light);
+  transition: 0.5s linear;
+}
+
+.toCheck1{
+  background: black;
+  transition: 15s linear;
+}

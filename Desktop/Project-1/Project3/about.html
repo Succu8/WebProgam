@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/aboutstyle.css">
+  <script src="http://api-maps.yandex.ru/2.1/?apikey=9201b8e6-f317-4cf7-92e4-af6d29b43bbd&lang=en-US" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+  <script src="js/about.js"></script>
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+
+<body>
+  <nav class="main-nav3">
+    <ul>
+      <li>
+        <a href="web.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="services.html">Top</a>
+      </li>
+      <li>
+        <a href="contact.html">Reviews</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="gridd">
+    <div class="w3-content w3-section griddd griddd1" style="position: static;" id = 'divToLight1'>
+      <img class="mySlides w3-animate-fading" src="img/sl1.jpg">
+      <img class="mySlides w3-animate-fading" src="img/sl2.jpg">
+      <img class="mySlides w3-animate-fading" src="img/sl3.jpg">
+      <img class="mySlides w3-animate-fading" src="img/sl4.jpg">
+      <img class="mySlides w3-animate-fading" src="img/sl5.jpg">
+      <img class="mySlides w3-animate-fading" src="img/sl6.jpg">
+      <img class="mySlides w3-animate-fading" src="img/sl7.jpg">
+    </div>
+ 
+
+
+    <div class="griddd griddd2" id = 'divToLight2'>
+      <h2>What is an anime?</h2>
+      <p style="text-align: center; font-family: banzai; font-size: 25px; color: rgb(179, 179, 179);">Anime - this art of animation originated in the XX century. in the East, in distant Japan. But surprisingly, this genre
+        owes its name to a non-Japanese word. As you may have guessed, the word "anime" is just an abbreviation for the English
+        "animation", which has been successfully disseminated because of its ease of pronunciation.</p>
+    </div>
+    <div class="griddd griddd3" id="map" style="width: auto;">
+      <p style="opacity: 0; font-size: 1px;">YANDEX MAP</p>
+    </div>
+    <div class="griddd griddd4" id = 'divToLight3'>
+      <h2>About Us</h2>
+      <p style="text-align: center; font-family: banzai; font-size: 25px; color: rgb(179, 179, 179);">For 10 years, we have been pleased anime fans with the latest news about their favorite characters, series and comics.
+        On our site you can find a description of the best anime, anime news, as well as various reviews from satisfied readers.
+      </p>
+      <p style="text-align: center; font-family: banzai; font-size: 20px; color: rgb(179, 179, 179);">Our address: 7350 Bay Rd. Liverpool, NY 13090</p>
+      <p style="text-align: center; font-family: banzai; font-size: 20px; color: rgb(179, 179, 179);">For all questions: 202-555-0165 (from 11:00 to 21:00)</p>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="foot1">
+      <div class="foot2">
+        <img src="img/ic1.png" style="margin-top: 20px;">
+      </div>
+      <div class="foot2">
+        <img src="img/ic2.png">
+      </div>
+      <div class="foot2">
+        <img src="img/ic3.png" style="margin-top: 10px;">
+      </div>
+      <div class="foot2">
+        <img src="img/icc.jpg" style="margin-top: 10px;">
+      </div>
+      <div class="foot2">
+        <img src="img/ic5.png">
+      </div>
+      <div class="foot2">
+        <img src="img/ic6.png">
+      </div>
+      <div class="foot2">
+        <img src="img/ic7.png">
+      </div>
+      <div class="foot2">
+        <img src="img/ic8.png">
+      </div>
+      <div class="foot2">
+        <img src="img/ic9.png">
+      </div>
+      <div class="foot2">
+        <img src="img/ic10.png">
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+  </script>
+
+</body>
+
+</html>
+
